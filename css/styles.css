@@ -21,7 +21,7 @@ img {
 }
 
 .logo {
-    width: 170px;
+    width: 175px;
     display: block;
 }
 
@@ -31,8 +31,7 @@ header div {
     align-items: center;
     
 }
-  
-  
+
 nav {
     text-align: left;
   }
@@ -59,14 +58,12 @@ nav a {
   
 .product {
     display: grid;
-    grid-template-columns: (4, 1fr);
+    grid-template-columns: (6, 1fr);
     grid-template-areas: 
-     "img1 img1 img2 img2"
-     "img1 img1 img2 img2"
-     "img3 img3 img4 img4"
-     "img3 img3 img4 img4"
-    
-    
+     "img1 img1 img1"
+     "img1 img1 img1"
+     "img2 img3 img4"
+     "img2 img3 img4"    
     ;
 }
 
@@ -86,56 +83,22 @@ nav a {
     grid-area: img4;
   }
 
+.product {
+    display: flexbox;
+    gap: 2em;
 
+}
 
+a.btn {
+    background-color: #000; 
+    color: #fff; 
+    padding: 15px; 
+    border-radius: 5px; 
+    margin: auto;
+    padding: 10px;
+    text-decoration: none;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 a.btn {
@@ -146,6 +109,7 @@ a.btn {
     margin: auto;
     padding: 1em;
     text-decoration: none;
+    
   }
   
 #behind-the-dough .wrapper {
