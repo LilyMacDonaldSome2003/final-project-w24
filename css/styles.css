@@ -143,6 +143,25 @@ a.btn {
     
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  /*   Displays three columns */
+    gap: 40px;
+}
+
+
+.grid article {
+    background-color: #fff;
+    padding: 1em;
+    
+    display: flex;
+    flex-direction: column;
+  /*   everything is down where it should be */
+    align-items: flex-start;
+    
+}
+
 
 
 
