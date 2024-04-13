@@ -116,6 +116,7 @@ a.btn {
       display: flexbox;
       background-color: #fafafa;
       text-align: center;
+      padding: 10px;
 }
   
 #behind-the-dough .wrapper article {
@@ -148,22 +149,47 @@ a.btn {
     grid-template-columns: repeat(2, 1fr);
   /*   Displays three columns */
     gap: 40px;
+    
 }
 
 
 .grid article {
-    background-color: #fff;
     padding: 1em;
     
-    display: flex;
+    display: flexbox;
     flex-direction: column;
   /*   everything is down where it should be */
     align-items: flex-start;
-    
+}
+
+h1 {
+    font-size: 2.027rem;
+}
+
+h2 {
+    font-size: 1.802rem;
+}
+
+h3 {
+    font-size: 1.266rem;
+    text-align: center;
+    color: #222;
 }
 
 
 
+@media (min-width: 768px) {
+    .product {
+        display: grid;
+        grid-template-columns: (4, 1fr);
+        grid-template-areas: 
+         "img1 img1 img2 img2"
+         "img1 img1 img2 img2"
+         "img3 img3 img4 img4"
+         "img3 img3 img4 img4"    
+        ;
+    }
+}
 
 
 
