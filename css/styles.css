@@ -18,6 +18,7 @@ img {
 .wrapper {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 13px;
 }
 
 .logo {
@@ -38,7 +39,7 @@ nav {
   
 nav ul {
     margin: 0;
-    padding: 0;
+    padding: 10px;
     list-style: none;
     display: flex;
 }
@@ -55,7 +56,16 @@ nav a {
     font-size: 1rem;
     text-transform: uppercase; 
 }
-  
+
+.product {
+    display: flexbox;
+    gap: 1em;
+}
+
+img {
+    border-radius: 10px;
+}
+
 .product {
     display: grid;
     grid-template-columns: (6, 1fr);
@@ -83,11 +93,6 @@ nav a {
     grid-area: img4;
   }
 
-.product {
-    display: flexbox;
-    gap: 2em;
-
-}
 
 a.btn {
     background-color: #000; 
@@ -127,22 +132,21 @@ a.btn {
 }
 
 #what-people .wrapper {
-    display: flexbox;
+    display: grid;
     background-color: #000;
-    text-align: center;
-    color: #fafafa;
+    text-align: left;
+    color: #f8fafc;
     padding-top: auto;
     padding-bottom: auto;
-    padding: 1em;
-    column-gap: 40px;
+    padding: 1rem;
+
 }
 
-#what-people .wrapper article {
+blockquote {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-self: left;
-    
+    grid-template-rows: 1fr 1fr;
 }
+
 
 .grid {
     display: grid;
@@ -165,6 +169,7 @@ a.btn {
 h1 {
     font-size: 2.027rem;
     font-weight: 500;
+    padding: 5px;
 }
 
 h2 {
@@ -178,7 +183,27 @@ h3 {
     color: #222;
 }
 
+.selection {
+    display: block;
+    background-color: #f8fafc;
+    margin-bottom: 1rem;
+    
+}
+.selection p:nth-child(2) {
+    font-weight: 600;
+    text-align: center;
+}
 
+.selection p:nth-child(3) {
+    font-weight: 400;
+    text-align: center;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
 
 @media (min-width: 768px) {
     .product {
@@ -193,11 +218,66 @@ h3 {
     }
 
     #behind-the-dough .wrapper article {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: left;
+      column-gap: 40px;
+    }
+
+   .block {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      justify-items: left;
+  
+    }
+
+    .grid {
         display: grid;
+        grid-template-columns: repeat(4, 1fr);
+      /*   Displays three columns */
+        gap: 40px;
+        
+    }
+}
+
+@media (min-width: 960px) {
+    #sweetheart .wrapper {
+        display: flex;
         grid-template-columns: repeat(2, 1fr);
-        justify-items: left;
         column-gap: 40px;
     }
+    /* .product {
+        display: grid;
+        grid-template-columns: (4, 1fr);
+        grid-template-areas: 
+         "img1 img1 img2 img2"
+         "img1 img1 img2 img2"
+         "img3 img3 img4 img4"
+         "img3 img3 img4 img4"    
+        ;
+    }
+
+    #behind-the-dough .wrapper article {
+      display: flex;
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: left;
+      column-gap: 40px;
+    }
+
+   .block {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      justify-items: left;
+  
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+      /*   Displays three columns */
+        gap: 40px;
+        
+    } */
 }
 
 
