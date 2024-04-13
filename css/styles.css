@@ -203,6 +203,7 @@ footer {
     background-color: #000;
     color: #fff;
     text-align: center;
+    padding: 15px;
 }
 
 @media (min-width: 768px) {
@@ -246,39 +247,7 @@ footer {
         grid-template-columns: repeat(2, 1fr);
         column-gap: 40px;
     }
-    /* .product {
-        display: grid;
-        grid-template-columns: (4, 1fr);
-        grid-template-areas: 
-         "img1 img1 img2 img2"
-         "img1 img1 img2 img2"
-         "img3 img3 img4 img4"
-         "img3 img3 img4 img4"    
-        ;
-    }
-
-    #behind-the-dough .wrapper article {
-      display: flex;
-      grid-template-columns: repeat(2, 1fr);
-      justify-items: left;
-      column-gap: 40px;
-    }
-
-   .block {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      justify-items: left;
-  
-    }
-
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-      /*   Displays three columns */
-        gap: 40px;
-        
-    } */
-}
+    
 
 
 
